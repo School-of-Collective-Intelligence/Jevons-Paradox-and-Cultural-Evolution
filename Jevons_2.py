@@ -54,7 +54,7 @@ class Actions:
     def choose(self):
         return np.random.randn() + self.m
 
-# Update of the action-value estimate (i.e. expected efficiency)
+# Update expected efficiency based on observed efficiency
     def update(self, x):
         self.t += 1
         self.mean = (1 - 1.0 / self.t) * self.mean + 1.0 / self.t * x
@@ -81,10 +81,9 @@ def agent_type(m1, m2, m3, m4, eps, t, bs, rebound):
                 else:  # exploit current knowledge
                     j = np.argmax([a.mean for a in actions])
                 x = actions[j].choose()  # choose action
-                actions[j].update(x)  # update expected efficiency of actions
+                actions[j].update(x)  # update efficiency of actions
                 # Resources consumed by agent
                 resources_consumed_by_agent = bs + (x * rebound) - (1 - rebound) * x
-                # resources_consumed_by_agent = bs + x * rebound
                 resources_consumed_by_agent = np.clip(resources_consumed_by_agent, 0, None)
 
             # data of given agent
