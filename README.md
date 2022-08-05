@@ -1,9 +1,12 @@
 # Jevons-Paradox-and-Cultural-Evolution
+
 Exploration-exploitation model for the investigation of the coupling and decoupling processes between efficiency gains and resource consumption.
 
 The file named Jevons_2.py contain the core classes and functions needed to run the model.
 
 The file named Run_Jevons_2.py is the main script that imports the above mentioned file to run the simulation. In these scripts you can manipulate:
+
+## Running simulations
 
 To run simulations, make sure the two files are in the same directory. Open the ```Run_Jevons_2.py``` file and declare the variables. To start with, we recommend you manipulate the values of the rebound variable, which can take values from 0 to 1.
 ```
@@ -18,5 +21,38 @@ rep_rate = 0.01  # resource units replenished per unit of existing resources at 
 rebound = 0.2  # Marginal rebound. Additional number of resource units consumed for every one unit increase in
 # efficiency. It takes values from 0 to 1 in steps of 0.1.
 ```
+## Plots
+
+By running the simulations you can obtain charts of population efficiency, existing resources, mean consumption and sustainability index. They look like this:
 
 ![image](https://user-images.githubusercontent.com/22002158/183128009-e776a519-3cba-480e-9d2d-878ab02e429e.png)
+
+## Preliminary results
+
+Simulations for ```rebound < 0.5```.
+There is no resource depletion. Efficiency gains offset the rebound effect.
+As efficiency increases, average consumption goes down and sustainability index grows over time.
+
+Simulations for ```rebound = 0.5```.
+No resource depletion. Neutral model. Constant mean consumption (assuming constant population).
+Sustainability index = 1.
+
+Scenarios for ```rebound = 0.6```.
+Most of the time, no resource depletion within the time scales tested.
+Consumption goes up. Sustainability index decreases over time.
+
+Scenarios for ```rebound = 0.7, 0.8, 0.9```.
+Resource depletion when eps = 0.05, eps = 0.1, eps = 0.5 and 0.01.
+No resource depletion when eps = 0.
+The higher the efficiency, the faster the resource depletion.
+Consumption goes up. Sustainability index decreases over time.
+
+Scenarios for ```rebound = 1```.
+Resource depletion when eps = 0.05, eps = 0.1, eps = 0.5 and 0.01.
+No resource depletion when eps = 0.
+The higher the efficiency, the faster the probability of resource depletion.
+Consumption goes up. Sustainability index decreases over time.
+
+The simulations illustrate that in scenarios where there is absolute decoupling between resource consumption and efficiency gains, there is no resource depletion. However, in scenarios where efficiency gains are not able to compensate for the rebound effect, resources are depleted.
+
+In short, the concern is not that consumption (and by extension pollution) within a given resource domain cannot be decoupled from efficiency, but that in absolute terms the decoupling is fast enough to compensate for the rebound effect. In scenarios with a rebound effect of less than 0.5 we observe that this objective is met: there may be an initial increase in consumption, but as the population increases its efficiency, consumption is reduced and allows resources not to be depleted.
