@@ -8,7 +8,7 @@ The file named Run_Jevons_2.py is the main script that imports the above mention
 
 Please note that given the collaborative nature of this project, this version of the model has many comments in the scripts. The purpose is to make it as easy as possible to understand the algorithms we are building from scratch.
 
-# Jevons_2 Model:
+# Jevons_2 model:
 
 ## Running simulations
 
