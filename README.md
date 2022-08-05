@@ -8,6 +8,8 @@ The file named Run_Jevons_2.py is the main script that imports the above mention
 
 Please note that given the collaborative nature of this project, this version of the model has many comments in the scripts. The purpose is to make it as easy as possible to understand the algorithms we are building from scratch.
 
+# Jevons_2 Model:
+
 ## Running simulations
 
 To run simulations, make sure the two files are in the same directory. Open the ```Run_Jevons_2.py``` file and declare the variables. To start with, we recommend you to keep the default values and manipulate only the values of the ```rebound``` variable, which can take values from 0 to 1.
@@ -31,6 +33,8 @@ By running the simulations you can obtain charts of population efficiency, exist
 ![image](https://user-images.githubusercontent.com/22002158/183128009-e776a519-3cba-480e-9d2d-878ab02e429e.png)
 
 ## Preliminary results
+
+Simulations using the default values and manipulating the rebound value:
 
 Simulations for ```rebound < 0.5```.
 There is no resource depletion. Efficiency gains offset the rebound effect.
