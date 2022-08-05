@@ -10,7 +10,8 @@ Please note that given the collaborative nature of this project, this version of
 
 ## Running simulations
 
-To run simulations, make sure the two files are in the same directory. Open the ```Run_Jevons_2.py``` file and declare the variables. To start with, we recommend you manipulate the values of the rebound variable, which can take values from 0 to 1.
+To run simulations, make sure the two files are in the same directory. Open the ```Run_Jevons_2.py``` file and declare the variables. To start with, we recommend you to keep the default values and manipulate only the values of the ```rebound``` variable, which can take values from 0 to 1.
+
 ```
 # Parameters
 a_effic = [0, 1, 2, 3]  # Efficiency of actions
