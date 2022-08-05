@@ -56,3 +56,23 @@ Consumption goes up. Sustainability index decreases over time.
 The simulations illustrate that in scenarios where there is absolute decoupling between resource consumption and efficiency gains, there is no resource depletion. However, in scenarios where efficiency gains are not able to compensate for the rebound effect, resources are depleted.
 
 In short, the concern is not that consumption (and by extension pollution) within a given resource domain cannot be decoupled from efficiency, but that in absolute terms the decoupling is fast enough to compensate for the rebound effect. In scenarios with a rebound effect of less than 0.5 we observe that this objective is met: there may be an initial increase in consumption, but as the population increases its efficiency, consumption is reduced and allows resources not to be depleted.
+
+## Some limitations
+
+1. The code uses np.random.random(); that's deprecated in favour of the new generators. In future versions we can use
+default_rng.
+
+2. The algorithm I use is quite slow in Python. Mainly because there is some recurrence in
+the update function. There are several options.
+Use scipy.signal.lfilter to try to speed up the simulations.
+Change language.
+Use the university clusters.
+In any case, I have found that the results are the same keeping the N/r_t0 ratio, so it may not be so terrible.
+With a bit of time you can simulate larger populations.
+
+3. Constant population.
+
+4. There is only a single domain of natural resources. More could be implemented, which would allow agents to
+transition from consumption of one domain to another, so that the pools of some resources are replenished.
+
+5. The distributions of efficiency and resources are probably too simplistic at this stage of development. Although the model illustrates the Jevons paradox quite well.
