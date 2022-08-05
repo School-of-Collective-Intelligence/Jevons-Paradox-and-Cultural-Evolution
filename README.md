@@ -42,14 +42,14 @@ Most of the time, no resource depletion within the time scales tested.
 Consumption goes up. Sustainability index decreases over time.
 
 Scenarios for ```rebound = 0.7, 0.8, 0.9```.
-Resource depletion when eps = 0.05, eps = 0.1, eps = 0.5 and 0.01.
+Resource depletion when ```eps = 0.05, eps = 0.1, eps = 0.5 and 0.01```.
 No resource depletion when eps = 0.
 The higher the efficiency, the faster the resource depletion.
 Consumption goes up. Sustainability index decreases over time.
 
 Scenarios for ```rebound = 1```.
-Resource depletion when eps = 0.05, eps = 0.1, eps = 0.5 and 0.01.
-No resource depletion when eps = 0.
+Resource depletion when ```eps = 0.05, eps = 0.1, eps = 0.5 and 0.01```.
+No resource depletion when ```eps = 0```.
 The higher the efficiency, the faster the probability of resource depletion.
 Consumption goes up. Sustainability index decreases over time.
 
