@@ -6,9 +6,13 @@ The file named Jevons_2.py contain the core classes and functions needed to run 
 
 The file named Run_model_2.py is the main script that imports the above mentioned file to run the simulation.
 
+The file named Run_model_2_terminal.py contains a parser to run simulations from the command line.
+
 Please note that given the collaborative nature of this project, this version of the model has many comments in the scripts. The purpose is to make it as easy as possible to understand the algorithms we are building from scratch.
 
 ## Running simulations
+
+### From IDE
 
 To run simulations, make sure the two files are in the same directory. Open the ```Run_Jevons_2.py``` file in your IDE and declare the variables. To start with, we recommend you to keep the default values and manipulate only the values of the ```rebound``` variable, which can take values from 0 to 1.
 
@@ -24,6 +28,14 @@ rep_rate = 0.01  # resource units replenished per unit of existing resources at 
 rebound = 0.2  # Marginal rebound. Additional number of resource units consumed for every one unit increase in
 # efficiency. It takes values from 0 to 1 in steps of 0.1.
 ```
+### From terminal
+
+Go to the directory where the scripts are located and try running the following example:
+
+```python Run_model_2_terminal.py -r 0.2```
+
+The ```-r```` command passes the value of the rebound effect to the script and python runs the simulations for that value. The rebound effect can take values from 0 to 1.
+
 ## Plots
 
 By running the simulations you can obtain charts of population efficiency, existing resources, mean consumption and sustainability index. They look like this:
