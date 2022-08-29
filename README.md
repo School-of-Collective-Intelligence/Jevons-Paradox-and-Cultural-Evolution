@@ -32,7 +32,9 @@ rebound = 0.2  # Marginal rebound. Additional number of resource units consumed 
 
 Go to the directory where the scripts are located and try running the following example:
 
-```python Run_model_2_terminal.py -r 0.2```
+```
+python Run_model_2_terminal.py -r 0.2
+```
 
 The ```-r```` command passes the value of the rebound effect to the script and python runs the simulations for that value. The rebound effect can take values from 0 to 1.
 
