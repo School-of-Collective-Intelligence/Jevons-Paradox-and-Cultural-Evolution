@@ -6,7 +6,7 @@ Segovia-Martin J, Creutzig F, Winters J. 2023 Efficiency traps beyond the climat
 378: 20220405.
 https://doi.org/10.1098/rstb.2022.0405
 
-To access the latest version of the model go to the folder named **Model_2023**
+To access the latest version of the model go to the folder named [**Model_2023**](https://github.com/School-of-Collective-Intelligence/Jevons-Paradox-and-Cultural-Evolution/tree/main/Model_2023)
 
 # Jevons-Paradox-and-Cultural-Evolution
 
