@@ -8,6 +8,8 @@ https://doi.org/10.1098/rstb.2022.0405
 
 To access the latest version of the model go to the folder named [**Model_2023**](https://github.com/School-of-Collective-Intelligence/Jevons-Paradox-and-Cultural-Evolution/tree/main/Model_2023)
 
+You can also use our Flask app at: https://jevons-collectiveintelligence.pythonanywhere.com/ or https://jsegoviamartin.pythonanywhere.com/
+
 # Jevons-Paradox-and-Cultural-Evolution
 
 Exploration-exploitation model for the investigation of the coupling and decoupling processes between efficiency gains and resource consumption.
