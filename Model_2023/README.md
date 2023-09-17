@@ -52,3 +52,7 @@ python main.py --m1 0 --m2 1 --m3 2 --m4 3 --eps 0.05 --t 100 --N 100 --bs 0.1 -
 4. Press Enter to execute the command.
 
 The scenario will run with the specified command-line arguments, and the output or result can be processed within the main() function in the main.py file as needed.
+
+### Flask app
+
+You can also use our Flask app at: https://jevons-collectiveintelligence.pythonanywhere.com/ or https://jsegoviamartin.pythonanywhere.com/
