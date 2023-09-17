@@ -56,7 +56,7 @@ By running the simulations you can obtain charts of population efficiency, exist
 
 ![image](https://user-images.githubusercontent.com/22002158/183128009-e776a519-3cba-480e-9d2d-878ab02e429e.png)
 
-## Preliminary results
+## Preliminary results: formalising the Jevons paradox
 
 Simulations using the default values and manipulating the rebound value:
 
@@ -86,13 +86,5 @@ Consumption goes up. Sustainability index decreases over time.
 
 The simulations illustrate that in scenarios where there is absolute decoupling between resource consumption and efficiency gains, there is no resource depletion. However, in scenarios where efficiency gains are not able to compensate for the rebound effect, resources are depleted.
 
-In short, the concern is not that consumption (and by extension pollution) within a given resource domain cannot be decoupled from efficiency, but that in absolute terms the decoupling is fast enough to compensate for the rebound effect. In scenarios with a rebound effect of less than 0.5 we observe that this objective is met: there may be an initial increase in consumption, but as the population increases its efficiency, consumption is reduced and allows resources not to be depleted.
 
 
-
-3. Constant population.
-
-4. There is only a single domain of natural resources. More could be implemented, which would allow agents to
-transition from consumption of one domain to another, so that the pools of some resources are replenished.
-
-5. The distributions of efficiency and resources are probably too simplistic at this stage of development. Although the model illustrates the Jevons paradox quite well.
