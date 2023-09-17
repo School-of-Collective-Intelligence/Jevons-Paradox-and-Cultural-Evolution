@@ -34,3 +34,21 @@ se_1 = 0.75 # Indirect rebound effect 1: share of resource consumption due to re
 # that are consumed in the subsequent domain (2) as a consequence of the substitution effect
 se_2 = 0.75 # Indirect rebound effect 2: share of resource consumption due to rebound effects in the secondary domain (2)
 # that are consumed in the subsequent domain (3) as a consequence of the substitution effect
+```
+
+### From the terminal
+
+1. Open a terminal or command prompt.
+
+2. Navigate to the project directory where your code is located. For example, if your code is in a folder named "my_project", use the cd command to change to that directory:
+```
+cd path/to/my_project
+```
+
+3. Run the main.py file with the desired command-line arguments. Here's an example command:
+```
+python main.py --m1 0 --m2 1 --m3 2 --m4 3 --eps 0.05 --t 100 --N 100 --bs 0.1 --r_t0 10000 --rep_rate 0.01 --rebound 0.75 --se_1 0.75 --se_2 0.75
+```
+4. Press Enter to execute the command.
+
+The scenario will run with the specified command-line arguments, and the output or result can be processed within the main() function in the main.py file as needed.
